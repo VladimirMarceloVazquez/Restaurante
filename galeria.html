@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Galería | Sabor & Fuego</title>
+  <link rel="stylesheet" href="/css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Roboto&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background-color: #fffdf6;
+      color: #333;
+    }
+
+    header {
+      background-color: #4b1e0d;
+      color: white;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #f5c26b;
+    }
+
+    h1 {
+      font-family: 'Playfair Display', serif;
+      text-align: center;
+      font-size: 3rem;
+      margin-top: 40px;
+    }
+
+    .gallery-grid {
+      max-width: 1200px;
+      margin: 40px auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 0 20px;
+    }
+
+    .gallery-grid img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .gallery-grid img:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+      background-color: #4b1e0d;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">Sabor & Fuego</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="index.html#menu">Menú</a></li>
+        <li><a href="galeria.html">Galería</a></li>
+        <li><a href="index.html#reserva">Reservar</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Galería de Sabores</h1>
+    <section class="gallery-grid">
+  <div class="gallery-item">
+    <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092" alt="Parrilla">
+    <h3>Parrillada Mixta</h3>
+    <p>$280 MXN</p>
+  </div>
+  <div class="gallery-item">
+    <img src="https://images.unsplash.com/photo-1551782450-a2132b4ba21d" alt="Hamburguesa artesanal">
+    <h3>Hamburguesa Artesanal</h3>
+    <p>$160 MXN</p>
+  </div>
+  <div class="gallery-item">
+    <img src="https://imgs.search.brave.com/3fLKJRfUwjGNUTgGFvXVs27tb4wzqLHXuXF03PFF3Xo/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4w/LnJlY2V0YXNncmF0/aXMubmV0L2VzL3Bv/c3RzLzIvNi8wL2Vu/c2FsYWRhX2RlX3Bp/bmFfeV9wYWxpdG9z/X2RlX2NhbmdyZWpv/Xzc3MDYyXzJfNjAw/LmpwZw" alt="Ensalada fresca">
+    <h3>Ensalada de la Casa</h3>
+    <p>$120 MXN</p>
+  </div>
+  <div class="gallery-item">
+    <img src="https://images.unsplash.com/photo-1627308595229-7830a5c91f9f" alt="Postre gourmet">
+    <h3>Postre de Autor</h3>
+    <p>$90 MXN</p>
+  </div>
+  <div class="gallery-item">
+    <img src="https://images.unsplash.com/photo-1586190848861-99aa4a171e90" alt="Mesa servida">
+    <h3>Degustación Completa</h3>
+    <p>$450 MXN</p>
+  </div>
+  <div class="gallery-item">
+    <img src="https://imgs.search.brave.com/NLFLI5LZ5OrCJCOjYm3Gy58ND5-gU8ad5-d2Q-mp2Js/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9oaXBz/LmhlYXJzdGFwcHMu/Y29tL2htZy1wcm9k/L2ltYWdlcy9zb2xv/bWlsbG8tZGUtY2Vy/ZG8tYXNhZG8tY29u/LXNhbHNhcy1vcmll/bnRhbGVzLTE1NTAy/Mjg5NTAuanBnP2Ny/b3A9MC42Njd4dzox/LjAweGg7MC4xNDB4/dywwJnJlc2l6ZT05/ODA6Kg" alt="Ambiente del restaurante">
+    <h3>Ambiente Premium</h3>
+    <p>Incluido con reservación</p>
+  </div>
+  <div class="gallery-item">
+    <img src="https://imgs.search.brave.com/PTc0mgYiI6ekAYKqnJs3blrAzQlQbA-zNPH1-SbO3Uo/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9sYWN1/YWRyYWRlc2FsdmFk/b3IucGUvd3AtY29u/dGVudC91cGxvYWRz/LzIwMjEvMTEvTEEt/Q1VBRFJBLURFLVNB/TFZBRE9SLURJQS0z/MDcyOS0xMDI0eDY4/My5qcGc" alt="Parrilla 2">
+    <h3>Corte Especial</h3>
+    <p>$340 MXN</p>
+  </div>
+  <div class="gallery-item">
+    <img src="https://imgs.search.brave.com/FRNoeqKMohGEjMlaVhbNCugGkfyrvZDZbO7A3WYQbrE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvNjE1/NTA2MzIwL2VzL2Zv/dG8vcGxhdG8tcHJp/bmNpcGFsLWJlbGxh/bWVudGUtZGVjb3Jh/ZG8tZW4tZWwtcmVz/dGF1cmFudGUuanBn/P3M9NjEyeDYxMiZ3/PTAmaz0yMCZjPTFi/Z0Z6c3hZNk5jV0Jv/RU5scXRyV3YwMUJr/Q19tM3E2LXNtdmxQ/cFFvQnc9" alt="Plato gourmet">
+    <h3>Plato Gourmet</h3>
+    <p>$300 MXN</p>
+  </div>
+</section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Sabor & Fuego. Todos los derechos reservados.</p>
+  </footer>
+
+</body>
+</html>
