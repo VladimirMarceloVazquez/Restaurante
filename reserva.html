@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reserva | Sabor & Fuego</title>
+    <link rel="stylesheet" href="css/Index.css" />
+    <link rel="stylesheet" href="css/Form_res.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Roboto&display=swap"rel="stylesheet">
+</head>
+
+<body class="reserva">
+    <header class="header">
+    <div class="logo">Sabor & Fuego</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="index.html#menu">Menú</a></li>
+        <li><a href="galeria.html">Galería</a></li>
+        <li><a href="index.html#reserva">Reservar</a></li>
+      </ul>
+    </nav>
+  </header>
+    <main>
+        <article class="reserva_form">
+            <h1 class="titulo">Reservar Mesa</h1>
+            <form action="#" method="POST" id="Form_reserva">
+                <p id="bienvenida">Bienvenidos a Sabor & Fuego, por favor complete el
+                    siguiente formulario para reservar su mesa.</p>
+                <p id="info">Es importante destacar que si desea algo adicional, puede
+                    mencionarlo en el campo de observaciones. Y llegue 10 a 15 minutos antes de su reservación
+                    para la persona que reservó.</p>
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required />
+
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required />
+
+                <label for="phone">Teléfono:</label>
+                <input type="tel" id="phone" name="phone" required />
+
+                <label for="date">Fecha:</label>
+                <input type="date" id="date" name="date" required />
+
+                <label for="time">Hora de entrada:</label>
+                <input type="time" id="time" name="time" required />
+
+                <label for="duration">Duración de la reserva (horas):</label>
+                <input type="number" id="duration" name="duration" min="1" required />
+
+                <label for="occasion">Ocasión:</label>
+                <select id="Motivo" name="Motivo" required>
+                    <option value="cumpleaños">Cumpleaños</option>
+                    <option value="aniversario">Aniversario</option>
+                    <option value="reunion">Reunión</option>
+                    <option value="cena">Cena</option>
+                    <option value="almuerzo">Almuerzo</option>
+                    <option value="comida">Comida</option>
+                    <option value="otro">Otro</option>
+                </select>
+
+                <label for="guests">Número de Personas:</label>
+                <input type="number" id="guests" name="guests" min="1" required />
+
+                <label for="observations">Observaciones:</label>
+                <textarea id="observations" name="observations" rows="6" cols="50"
+                    placeholder="Escriba aquí cualquier solicitud especial o información adicional que desee compartir con nosotros, para darle el mejor servicio posible."></textarea>
+
+                <button type="submit" class="btn">Confirmar Reserva</button>
+            </form>
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Sabor & Fuego. Todos los derechos reservados.</p>
+        <p>&copy; 2025 Diseño de ejemplo creado por Vladimir Marcelo Vázquez, creditos a los autores originales de las imagenes usadas como ejemplo</p>
+    </footer>
+
+</body>
+
+</html>
