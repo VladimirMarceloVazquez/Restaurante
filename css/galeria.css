@@ -5,6 +5,14 @@
       margin-top: 40px;
       margin-left: 40px;
     }
+    main h1 {
+  max-width: 1200px;
+  margin: 40px auto 20px;
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+}
+
 
     .gallery-grid {
       max-width: 1200px;
